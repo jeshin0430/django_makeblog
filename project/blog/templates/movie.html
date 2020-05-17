@@ -1,0 +1,6 @@
+<body>
+    {% for name in movie %}
+        <a href="{% url 'detail' name.pk %}"> {{name.title}} </a>
+        <br>
+    {% endfor %}
+</body>

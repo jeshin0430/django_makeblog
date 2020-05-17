@@ -1,0 +1,13 @@
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="제목을 입력하세요">
+        <input type="text" name="content" placeholder="내용을 입력하세요">
+        <select name="category">
+            <option value="movie">영화</option>
+            <option value="drama">드라마</option>
+            <option value="entertain">예능</option>
+          </select>
+        <button type="submit">글쓰기</button>
+    </form>
+</body>
